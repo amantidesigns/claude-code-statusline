@@ -23,6 +23,8 @@ The original brilliant statusline script remains unchanged.
 
 Live rate-limit visibility in your Claude Code status bar at the bottom of your terminal.
 
+![Claude Code Statusline Demo](images/statusline-demo.png)
+
 ### With CodexBar (Full Experience)
 
 ```
