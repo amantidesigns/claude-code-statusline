@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+._*
+
+# Temp files
+*.tmp
+*.cache
+
+# IDE
+.vscode/
+.idea/
+
+# Test files
+test_output.txt
