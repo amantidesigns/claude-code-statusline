@@ -50,7 +50,7 @@ Shows:
 ## Quick Install (Recommended)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/claude-code-statusline/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/amantidesigns/claude-code-statusline/main/install.sh | bash
 ```
 
 This will:
@@ -82,7 +82,7 @@ brew install steipete/tap/codexbar
 ### Step 2: Download the Script
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/claude-code-statusline/main/statusline.sh -o ~/.claude/statusline.sh
+curl -fsSL https://raw.githubusercontent.com/amantidesigns/claude-code-statusline/main/statusline.sh -o ~/.claude/statusline.sh
 chmod +x ~/.claude/statusline.sh
 ```
 
@@ -235,7 +235,7 @@ Contributions welcome! Please:
 
 - **Original implementation**: [@kanoliban](https://github.com/kanoliban) - https://gist.github.com/kanoliban/39bb37cda2678b6e0941c5ca99757d9e
 - **CodexBar**: [@steipete](https://github.com/steipete) - https://github.com/steipete/CodexBar
-- **Enhanced documentation and setup**: [@YOUR_GITHUB_USERNAME](https://github.com/YOUR_GITHUB_USERNAME)
+- **Enhanced documentation and setup**: [@amantidesigns](https://github.com/YOUR_GITHUB_USERNAME)
 
 ---
 

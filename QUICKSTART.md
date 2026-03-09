@@ -5,7 +5,7 @@ Get Claude Code status bar working in 60 seconds.
 ## One Command Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/claude-code-statusline/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/amantidesigns/claude-code-statusline/main/install.sh | bash
 ```
 
 Then **restart Claude Code**.
