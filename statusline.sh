@@ -79,17 +79,15 @@ if [ -x "$CODEXBAR" ]; then
         PLAN_TIER=$(jq -r '.[0].usage.identity.loginMethod // empty' "$CACHE_FILE" 2>/dev/null)
 
         if [ -n "$SESSION_USED" ]; then
-            SESSION_LEFT=$((100 - SESSION_USED))
-            SESSION_PCT="${SESSION_LEFT}%"
-            if [ "$SESSION_LEFT" -le 50 ] 2>/dev/null && [ -n "$SESSION_RESET" ]; then
-                SESSION_PCT="${SESSION_LEFT}% (${SESSION_RESET##* at })"
+            SESSION_PCT="${SESSION_USED}%"
+            if [ "$SESSION_USED" -ge 50 ] 2>/dev/null && [ -n "$SESSION_RESET" ]; then
+                SESSION_PCT="${SESSION_USED}% (${SESSION_RESET##* at })"
             fi
         fi
         if [ -n "$WEEKLY_USED" ]; then
-            WEEKLY_LEFT=$((100 - WEEKLY_USED))
-            WEEKLY_PCT="${WEEKLY_LEFT}%"
-            if [ "$WEEKLY_LEFT" -le 50 ] 2>/dev/null && [ -n "$WEEKLY_RESET" ]; then
-                WEEKLY_PCT="${WEEKLY_LEFT}% (${WEEKLY_RESET##* at })"
+            WEEKLY_PCT="${WEEKLY_USED}%"
+            if [ "$WEEKLY_USED" -ge 50 ] 2>/dev/null && [ -n "$WEEKLY_RESET" ]; then
+                WEEKLY_PCT="${WEEKLY_USED}% (${WEEKLY_RESET##* at })"
             fi
         fi
     fi
