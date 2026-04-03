@@ -8,7 +8,7 @@ This is a fork of the original work by [@kanoliban](https://github.com/kanoliban
 
 1. **Attribution is maintained** - Keep references to the original author
 2. **Test your changes** - Verify everything works before submitting
-3. **Document new features** - Update README.md and EXAMPLES.md
+3. **Document new features** - Update README.md and docs/EXAMPLES.md
 
 ## How to Contribute
 
@@ -45,9 +45,10 @@ Open an issue with:
    ./install.sh
    ```
 
-5. **Test the statusline script manually**
+5. **Test both statusline scripts**
    ```bash
    echo '{"model":{"display_name":"Sonnet 4.5"},"cost":{"total_cost_usd":1.23},"context_window":{"context_window_size":200000,"current_usage":{"input_tokens":10000,"cache_creation_input_tokens":5000,"cache_read_input_tokens":5000}},"workspace":{"current_dir":"~/test"}}' | ./statusline.sh
+   echo '{"model":{"display_name":"Sonnet 4.5"},"cost":{"total_cost_usd":1.23},"context_window":{"context_window_size":200000,"current_usage":{"input_tokens":10000,"cache_creation_input_tokens":5000,"cache_read_input_tokens":5000}},"workspace":{"current_dir":"~/test"}}' | ./statusline-minimal.sh
    ```
 
 6. **Commit with clear messages**
@@ -74,7 +75,7 @@ Open an issue with:
 
 - Use clear, concise language
 - Include examples for new features
-- Update all relevant docs (README, EXAMPLES, etc.)
+- Update all relevant docs (README, docs/EXAMPLES, etc.)
 - Use proper markdown formatting
 
 ## Testing Checklist

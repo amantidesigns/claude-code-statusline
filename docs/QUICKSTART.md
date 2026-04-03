@@ -29,7 +29,7 @@ curl -fsSL https://raw.githubusercontent.com/amantidesigns/claude-code-statuslin
 curl -fsSL https://raw.githubusercontent.com/amantidesigns/claude-code-statusline/main/statusline-minimal.sh -o ~/.claude/statusline.sh
 ```
 
-See [README.md](./README.md) for full docs.
+See [README.md](../README.md) for full docs.
 
 ---
 
