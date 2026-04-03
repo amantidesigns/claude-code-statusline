@@ -41,7 +41,7 @@ fi
 GIT_BRANCH=""
 if git rev-parse --git-dir > /dev/null 2>&1; then
     BRANCH=$(git branch --show-current 2>/dev/null)
-    [ -n "$BRANCH" ] && GIT_BRANCH=" 🌿 $BRANCH"
+    [ -n "$BRANCH" ] && GIT_BRANCH=" │ $BRANCH"
 fi
 
 # --- Folder name ---
