@@ -57,10 +57,10 @@ echo ""
 echo "  [3/5] Choose your layout"
 echo ""
 echo "        Standard — full detail, all segments"
-echo "        [Opus 4.6 · Max] 📁 app 🌿 main │ Ctx: 🟢 12% │ Session: 66% │ Weekly: 68% │ \$4.82"
+echo "        [Opus 4.6 · Max] 📁 app │ main │ Ctx: 🟢 12% │ Session: 66% │ Weekly: 68% │ \$4.82"
 echo ""
 echo "        Minimal — ~50% shorter, icon labels, no cost"
-echo "        Opus │ 📁 app 🌿 main │ 🟢 12% │ ⏳ 66% │ 📅 68%"
+echo "        Opus │ 📁 app │ main │ 🟢 12% │ ⏳ 66% │ 📅 68%"
 echo ""
 read -p "        Which layout? [s]tandard or [m]inimal (default: minimal): " -n 1 -r
 echo

@@ -8,12 +8,12 @@ The installer asks you to pick a layout:
 
 **Standard** — full detail
 ```
-[Opus 4.6 · Max] 📁 project 🌿 main │ Ctx: 🟢 12% │ Session: 66% │ Weekly: 68% │ $4.82
+[Opus 4.6 · Max] 📁 project │ main │ Ctx: 🟢 12% │ Session: 66% │ Weekly: 68% │ $4.82
 ```
 
 **Minimal** — ~50% shorter, icon labels, no cost
 ```
-Opus │ 📁 project 🌿 main │ 🟢 12% │ ⏳ 66% │ 📅 68%
+Opus │ 📁 project │ main │ 🟢 12% │ ⏳ 66% │ 📅 68%
 ```
 
 Restart Claude Code after install.

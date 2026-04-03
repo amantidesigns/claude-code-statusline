@@ -14,7 +14,7 @@ Live rate-limit visibility in your Claude Code status bar.
 Full detail — model, plan tier, folder, branch, context, session, weekly, and cost.
 
 ```
-[Opus 4.6 · Max] 📁 my-project 🌿 main │ Ctx: 🟢 12% │ Session: 66% │ Weekly: 68% │ $4.82
+[Opus 4.6 · Max] 📁 my-project │ main │ Ctx: 🟢 12% │ Session: 66% │ Weekly: 68% │ $4.82
 ```
 
 ### Minimal
@@ -22,7 +22,7 @@ Full detail — model, plan tier, folder, branch, context, session, weekly, and 
 ~50% shorter — icon-based labels, no cost, no plan tier. Ideal if you use Companions/Buddies or have a narrow terminal.
 
 ```
-Opus │ 📁 my-project 🌿 main │ 🟢 12% │ ⏳ 66% │ 📅 68%
+Opus │ 📁 my-project │ main │ 🟢 12% │ ⏳ 66% │ 📅 68%
 ```
 
 ---
@@ -33,34 +33,34 @@ Opus │ 📁 my-project 🌿 main │ 🟢 12% │ ⏳ 66% │ 📅 68%
 
 Normal usage:
 ```
-[Opus 4.6 · Max] 📁 app 🌿 main │ Ctx: 🟢 8% │ Session: 85% │ Weekly: 72% │ $3.21
+[Opus 4.6 · Max] 📁 app │ main │ Ctx: 🟢 8% │ Session: 85% │ Weekly: 72% │ $3.21
 ```
 
 Context warning (>60%):
 ```
-[Opus 4.6 · Max] 📁 app 🌿 feat/auth │ Ctx: 🟡 65% │ Session: 45% (8:00PM) │ Weekly: 68% │ $12.34
+[Opus 4.6 · Max] 📁 app │ feat/auth │ Ctx: 🟡 65% │ Session: 45% (8:00PM) │ Weekly: 68% │ $12.34
 ```
 
 Context critical (>80%), session and weekly running low:
 ```
-[Opus 4.6 · Max] 📁 app 🌿 main │ Ctx: 🔴 87% │ Session: 30% (7:45PM) │ Weekly: 25% (Mon 2pm) │ $18.99
+[Opus 4.6 · Max] 📁 app │ main │ Ctx: 🔴 87% │ Session: 30% (7:45PM) │ Weekly: 25% (Mon 2pm) │ $18.99
 ```
 
 ### Minimal Scenarios
 
 Normal usage:
 ```
-Opus │ 📁 app 🌿 main │ 🟢 8% │ ⏳ 85% │ 📅 72%
+Opus │ 📁 app │ main │ 🟢 8% │ ⏳ 85% │ 📅 72%
 ```
 
 Context warning (>60%):
 ```
-Opus │ 📁 app 🌿 feat/auth │ 🟡 65% │ ⏳ 45% (8:00PM) │ 📅 68%
+Opus │ 📁 app │ feat/auth │ 🟡 65% │ ⏳ 45% (8:00PM) │ 📅 68%
 ```
 
 Context critical (>80%), everything hot:
 ```
-Opus │ 📁 app 🌿 main │ 🔴 87% │ ⏳ 30% (7:45PM) │ 📅 25% (Mon 2pm)
+Opus │ 📁 app │ main │ 🔴 87% │ ⏳ 30% (7:45PM) │ 📅 25% (Mon 2pm)
 ```
 
 ### Icon Reference
@@ -73,7 +73,7 @@ Opus │ 📁 app 🌿 main │ 🔴 87% │ ⏳ 30% (7:45PM) │ 📅 25% (Mon 
 | ⏳ | Session usage (resets every ~5 hours) |
 | 📅 | Weekly usage (resets every 7 days) |
 | 📁 | Current working directory |
-| 🌿 | Git branch |
+| `│ branch` | Git branch (pipe-separated) |
 
 Reset times appear in parentheses when usage hits 50%+.
 
@@ -150,7 +150,7 @@ Exit and start a new session. The status bar appears at the bottom of your termi
 |---------|---------|--------|
 | Model + Plan | `[Opus 4.6 · Max]` | stdin + CodexBar |
 | Folder | `📁 my-project` | stdin |
-| Git Branch | `🌿 main` | git |
+| Git Branch | `│ main` | git |
 | Context % | `Ctx: 🟢 12%` | stdin |
 | Session % | `Session: 66%` | CodexBar |
 | Weekly % | `Weekly: 68%` | CodexBar |
@@ -162,7 +162,7 @@ Exit and start a new session. The status bar appears at the bottom of your termi
 |---------|---------|--------|
 | Model | `Opus` | stdin |
 | Folder | `📁 my-project` | stdin |
-| Git Branch | `🌿 main` | git |
+| Git Branch | `│ main` | git |
 | Context % | `🟢 12%` | stdin |
 | Session % | `⏳ 66%` | CodexBar |
 | Weekly % | `📅 68%` | CodexBar |
